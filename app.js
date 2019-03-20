@@ -1,28 +1,22 @@
 var game = ['rock', 'paper', 'scissors']
 
 var rock = document.getElementById('Rock');
-  rock.addEventListener('click', function() {
-    alert('good choice');
-    var choice1 = 'rock';
-    console.log(choice1);
-    var choice2 = randomChoice2();
-    winOrLose(choice1, choice2);
-  });
+rock.addEventListener('click', function(){choiceHandler('rock')});
 
 var scissors = document.getElementById('Scissors');
-  scissors.addEventListener('click', function(){
-    alert('good choice');
-    var choice1 = 'scissors';
-    console.log(choice1);
-    var choice2 = randomChoice2();
-    winOrLose(choice1, choice2);
-  });
+scissors.addEventListener('click', function(){choiceHandler('scissors')});
 
-  var paper = document.getElementById('Paper');
-    paper.addEventListener('click', function(){
-      alert('good choice');
-      var choice1 = 'paper'
-      console.log(choice1);
-      var choice2 = randomChoice2();
-      winOrLose(choice1, choice2);
-    });
+var paper = document.getElementById('Paper');
+paper.addEventListener('click', function(){choiceHandler('paper')});
+
+
+function choiceHandler(choice){
+  var choice1 = choice;
+  console.log(choice1);
+  var choice2 = randomChoice2();
+  var result = winOrLose(choice1, choice2);
+  document.getElementById("player").innerHTML = 'You Chose ' + choice1 + ".";
+  document.getElementById("House").innerHTML = 'The House Chose ' + choice2 + ".";  
+  document.getElementById("result").innerHTML = result;
+
+}

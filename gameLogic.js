@@ -1,3 +1,23 @@
+
+var score1 =0;
+var score2 =0;
+
+function randomChoice2 (){
+  var choice = Math.random();
+  if (choice <= 0.33){
+    return 'rock';
+  }
+  else if (choice <= 0.66){
+return 'paper';
+  }
+
+  else {
+    return 'scissors';
+  }
+
+}
+
+
 function winOrLose(choice1, choice2) {
   if (choice1 === choice2) {
     return 'Tie';
