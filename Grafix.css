@@ -1,6 +1,6 @@
-p{
+.result{
     text-align: center;
-    font-size: 48px;
+    font-size: 35px;
     color: #777777;
 }
 h1{
@@ -14,3 +14,20 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
+.scoreboard{
+margin-left: auto;
+margin-right: auto;
+border: 0px solid black;
+border-collapse: collapse;
+width: 50%;
+padding: 0%;
+}
+
+.score{
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 33%;
+    padding: 0%;
+    }

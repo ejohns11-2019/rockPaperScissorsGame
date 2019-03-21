@@ -18,9 +18,31 @@
       <img src="https://images.unsplash.com/photo-1503792501406-2c40da09e1e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
       alt="scissors" id="Scissors" width='250px' class= 'center'>
     </div>
-    <p id='player'></p>
-    <p id='House'></p>
-    <p id='result'></p>
+    <div id='player' class= 'result'></div>
+    <div id='House' class= 'result'></div>
+    <div id='result' class= 'result'></div>
+    <br>
+    <table class = 'scoreboard'>
+      <tr>
+        <td class= 'score'>
+          Wins
+        </td>
+        <td class= 'score'>
+          Losses
+        </td>
+        <td class= 'score'>
+          Ties
+        </td>
+      </tr>
+
+      <tr>
+        <td id= 'wins' class= 'score'> &nbsp;</td>
+        <td id= 'losses' class= 'score'> &nbsp;</td>
+        <td id= 'ties' class= 'score'> &nbsp;</td>
+
+      </tr>
+
+    </table>
 </body>
 <script src="app.js"></script>
 <script src="gameLogic.js"></script>

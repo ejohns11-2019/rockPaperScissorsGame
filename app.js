@@ -18,5 +18,11 @@ function choiceHandler(choice){
   document.getElementById("player").innerHTML = 'You Chose ' + choice1 + ".";
   document.getElementById("House").innerHTML = 'The House Chose ' + choice2 + ".";  
   document.getElementById("result").innerHTML = result;
+  showScores();
+}
 
+function showScores(){
+  document.getElementById("wins").innerHTML = wins;
+  document.getElementById("losses").innerHTML = losses;  
+  document.getElementById("ties").innerHTML = ties;
 }
