@@ -16,13 +16,24 @@ function choiceHandler(choice){
   var choice2 = randomChoice2();
   var result = winOrLose(choice1, choice2);
   document.getElementById("player").innerHTML = 'You Chose ' + choice1 + ".";
-  document.getElementById("House").innerHTML = 'The House Chose ' + choice2 + ".";  
+  document.getElementById("House").innerHTML = 'The House Chose ' + choice2 + ".";
   document.getElementById("result").innerHTML = result;
   showScores();
 }
 
 function showScores(){
+
   document.getElementById("wins").innerHTML = wins;
-  document.getElementById("losses").innerHTML = losses;  
+  document.getElementById("losses").innerHTML = losses;
   document.getElementById("ties").innerHTML = ties;
+}
+
+var button = document.getElementById('button');
+button.addEventListener('click', function(){resetHandler()});
+
+function resetHandler() {
+  wins = 0;
+  losses = 0;
+  ties = 0;
+  showScores();
 }
